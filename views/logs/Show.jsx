@@ -4,11 +4,11 @@ const Default = require('../layouts/Default.jsx')
 class Show extends React.Component {
    
     render(){
-        const {title, entry, shipIsBroken, _id} = this.props.logs
-        const capTitle = title[0].toUpperCase() + title.substring(1)
+        const {title, entry, shipIsBroken, _id} = this.props.log
+        const capName = name[0].toUpperCase() + name.substring(1)
         return(
-        <Default title={`${capTitle} Show Page`} logs={this.props.logs}>
-            <p>{capTitle} is {entry} and {shipIsBroken? 'it\'s broken': 'it\'s not broken'}</p>
+        <Default title={`${capName} Show Page`} log={this.props.log}>
+            <p>{capName} is {entry} and {shipIsBroken? 'It\'s broken': 'It\'s not broken'}</p>
         </Default>
         )
    } 
