@@ -4,13 +4,13 @@ const Log = require('../models/log')
 const dataController = {
     //Index,
     index(req, res, next){
-        Log.find({}, (err, foundLogs) => {
+        Log.find({}, (err, foundLog) => {
             if(err){
                res.status(400).send({
                 msg: err.message
                }) 
             } else {
-                res.locals.data.logs = foundLogs
+                res.locals.data.logs = foundLog
                 next()
             }
         })

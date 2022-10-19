@@ -11,13 +11,21 @@ class Default extends React.Component {
                 </head>
                 <body>
                     <nav>
+                        <div>
                         <a href="/logs">Go to Home Page For Logs</a>
+                        </div>
+                        <div>
                         <a href="/logs/new">Create a New Log</a>
+                        </div>
+                        <div>
                         { log? <a href={`/logs/${log._id}/edit`}> {log.name} Edit Page </a> : ''}
+                        </div>
+                        <div>
                         { log? <a href={`/logs/${log._id}`}>{log.name} Show Page</a> : ''}
+                        </div>
                     </nav>
                     <h1>
-                        {title}
+                        {this.props.title}
                     </h1>
                     {this.props.children}
                 </body>

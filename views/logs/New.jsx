@@ -6,9 +6,9 @@ class New extends React.Component {
         return (
             <Default title="Create A New Log">
             <form method="POST" action="/logs">
-                Title: <input type="text" title="title" placeholder="Title of Log Here"></input><br/>
-                Entry: <input type="text" title="entry" placeholder='Entry of Log Here'></input><br/>
-                shipIsBroken: <input type="checkbox" title="shipIsBroken"></input><br/>
+                Title: <input type="text" name="title" placeholder="Title of Log Here"></input><br/>
+                Entry: <input type="text" name="entry" placeholder='Entry of Log Here'></input><br/>
+                shipIsBroken: <input type="checkbox" name="shipIsBroken"></input><br/>
                 <input type='submit' value="Submit Log"></input>
             </form>
             </Default>

@@ -1,17 +1,17 @@
 const mongoose = require('mongoose')
 
 // Make A Schema
-const capitals_logSchema = new mongoose.Schema({
-    title: { title: String, required: true},
-    entry: { entry: String, required: true},
-    shipIsBroken: Boolean,
-})
+const logSchema = new mongoose.Schema({
+    title: { type: String, required: true},
+    entry: { type: String, required: true},
+    shipIsBroken: Boolean
+}, {timestamps: true})
 
 
 // Make A Model From The Schema
 
-const log = mongoose.model('log', logSchema)
+const Log = mongoose.model('Log', logSchema)
 
 // Export The Model For Use  In The App
 
-module.exports = log
+module.exports = Log

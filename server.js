@@ -16,7 +16,7 @@ app.engine('jsx', require('jsx-view-engine').createEngine())
 app.set('view engine', 'jsx') // register the jsx view engine
 db.once('open', () => {
   console.log('connected to MongoDB Atlas')
-})s
+})
 /*Start Middleware */
 app.use(methodOverride('_method'))
 app.use(express.static('public'))
