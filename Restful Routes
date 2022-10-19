@@ -1,9 +1,0 @@
-
-#	Action	  URL	HTTP Verb	JSX view filename	mongoose method
-1	Index	 | /logs/	         | GET	 | Index.jsx |	Log.find()
-2	Show	 | /logs/ 	       |	GET  | Show.jsx  | Logs.findById	
-3	New	   | /logs/new       |	GET	 | New.jsx	 | none
-4	Create | /logs/	         | POST	 | none	     | Logs.create(req.body)
-5	Edit	 |	/logs/:id/edit |GET	   | Edit.jsx. | Logs.findById	
-6	Update | /logs/:id | UPDATE | none | Log.findByIdAndUpdate
-7	Destroy	| /logs/:id | DELETE | none | Log.findByIdAndDelete
